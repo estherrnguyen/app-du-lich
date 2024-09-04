@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/listImage"
+        android:layout_width="310dp"
+        android:layout_height="70dp"
+        android:layout_weight="1"
+        android:padding="2dp"
+        android:scaleX="1.3"
+        android:scaleY="1.1"
+        app:srcCompat="@drawable/bd_hanghau" />
+
+    <LinearLayout
+        android:layout_width="415dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:textAlignment="center">
+
+        <TextView
+            android:id="@+id/listTenDiaDanh"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:text="Tháp bánh ít"
+            android:textSize="19dp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/listDiaChi"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:text="Cách trung tâm thành phố 3km về phía Đông Nam thuộc phường Ghềnh Ráng, thành phố Quy Nhơn."
+            android:textColor="#000000"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+</LinearLayout>

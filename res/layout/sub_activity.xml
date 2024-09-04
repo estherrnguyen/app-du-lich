@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_background"
+    tools:context=".MainActivity">
+
+    <!-- logo app -->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="219dp"
+        android:layout_height="69dp"
+        app:srcCompat="@drawable/logo" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_corners_shadow">
+
+                <ImageView
+                    android:id="@+id/hinhAnhSub"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/vt_haidang"
+                    android:layout_margin="8dp" />
+            </FrameLayout>
+
+            <!-- LinearLayout for place details with rounded corners and shadow -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/rounded_corners_shadow"
+                android:padding="16dp">
+
+                <!-- TextView for place name -->
+                <TextView
+                    android:id="@+id/diaDanhSub"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/alfa_slab_one"
+                    android:text="Địa danh:"
+                    android:textColor="#FF0773BA"
+                    android:textSize="23sp"
+                    android:textStyle="italic" />
+
+                <!-- TextView for place address -->
+                <TextView
+                    android:id="@+id/diaChiSub"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="Địa chỉ:"
+                    android:textColor="#757575"
+                    android:textSize="18sp"
+                    android:textStyle="italic"/>
+
+                <!-- TextView for place introduction -->
+                <Button
+                    android:id="@+id/khamPha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#65EDED"
+                    android:text="Khám phá" />
+
+                <TextView
+                    android:id="@+id/gioiThieuSub"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Giới thiệu: "
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

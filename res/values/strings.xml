@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TieuLuan</string>
+    <string name="my_api_key">AIzaSyAjbhOo7Bz6om7PkaJXCRvAtja0NSZ46eY</string>
+    <string name="title_activity_maps1">MapsActivity1</string>
+    <string name="title_activity_maps">MapsActivity</string>
+
+</resources>
